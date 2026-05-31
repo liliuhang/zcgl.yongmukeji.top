@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆象云科技实物资产入校管理办法</title>
+<link rel="icon" href="https://hive.forms.usercontent.microsoft/Images/9188040d-6c67-4c5b-b112-36a304b66dad/00000000-0000-0003-bffd409131bf/T0RRH45M4BJGVXSCOEE2GS5JAZ/fe1565ec-02bf-4b26-800f-b6b659adee28" type="image/png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#121212;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.8;padding-bottom:80px}
+.btn{position:fixed;top:12px;left:12px;z-index:1000;background:#333;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.btn:hover{background:#444}
+.history-panel{display:none;position:fixed;top:60px;left:50%;transform:translateX(-50%);width:90%;max-width:500px;max-height:70vh;overflow-y:auto;background:#1e1e1e;border:1px solid #333;border-radius:12px;padding:20px;z-index:999;box-shadow:0 4px 20px rgba(0,0,0,.6)}
+.history-panel.active{display:block}
+.history-panel h3{color:#fff;margin-bottom:12px;font-size:18px}
+.history-item{padding:10px 0;border-bottom:1px solid #333;color:#ccc;font-size:14px}
+.history-item:last-child{border-bottom:none}
+.history-item .time{color:#888;font-size:12px;margin-bottom:4px}
+.history-item .content{color:#bbb}
+.close-btn{float:right;background:none;border:none;color:#fff;font-size:20px;cursor:pointer}
+.container{max-width:720px;margin:0 auto;padding:20px 16px}
+h1{font-size:24px;text-align:center;margin:60px 0 10px;color:#fff}
+.subtitle{text-align:center;color:#888;font-size:14px;margin-bottom:30px}
+.meta{text-align:center;color:#666;font-size:13px;margin-bottom:30px}
+.section{margin-bottom:30px}
+.section h2{font-size:20px;color:#fff;margin-bottom:14px;border-left:4px solid #4a9eff;padding-left:10px}
+.section h3{font-size:17px;color:#ddd;margin:16px 0 8px}
+.section p,.section li{font-size:14px;color:#bbb;margin-bottom:8px}
+.section ul{padding-left:20px}
+.section li{margin-bottom:6px}
+.notice{background:#1a3a1a;border:1px solid #2a5a2a;border-radius:8px;padding:12px;margin:16px 0;color:#99ff99;font-size:13px}
+.footer{position:fixed;bottom:0;left:0;right:0;background:#1a3a6a;color:#fff;padding:14px 16px;text-align:center;font-size:13px;z-index:100}
+.footer a{color:#aaddff;text-decoration:none}
+.overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:998}
+.overlay.active{display:block}
+</style>
+</head>
+<body>
+<button class="btn" onclick="toggleHistory()">📋 历史记录</button>
+<div class="overlay" id="overlay" onclick="closeHistory()"></div>
+<div class="history-panel" id="historyPanel">
+  <button class="close-btn" onclick="closeHistory()">✕</button>
+  <h3>📋 更新历史记录</h3>
+  <div class="history-item">
+    <div class="time">2026年5月31日（第一版）</div>
+    <div class="content">办法首次发布。</div>
+  </div>
+</div>
+<div class="container">
+  <h1>昆象云科技实物资产入校管理办法</h1>
+  <p class="meta">第一版发布日期：2026年5月31日 ｜ 更新日期：2026年5月31日，目前为第一版</p>
+  <div class="notice">
+    ❗为不影响校方日常工作，故本规定由昆象云科技结合实际、有关法律法规单方面制定，并已在最大限度内做出让步，校方不认可的，可与我司友好协商，协商不成的或在未告知我司并经我司书面同意直接做出本办法第三章第八条所述行为的，我司将依照本办法第三章第九条进行处理、维护我司合法权益！
+  </div>
+
+  <div class="section">
+    <h2>第一章 入校许可制度</h2>
+    <p>第一条 为便于完成《昆象云科技半对外教育服务三年（2024-2027）高质量发展计划》（以下简称"该计划"）顺利进行，我司客户（为在校学生）将携带一定我司资产入校，以完成相关计划。</p>
+    <p>第二条 对于经我司审查后符合要求的相关实物资产，我司将向客户发放《昆象云科技实物资产入校许可》（以下简称"入校许可"）。</p>
+    <p>第三条 入校许可直接粘贴在入校资产上。资产贴有入校许可后，不再另行粘贴《昆象云科技资产标签》。入校许可包含《昆象云科技资产标签》的全部法律效应，即：</p>
+    <p>（一）表明该物品为我司合法所有或合法管理的资产；</p>
+    <p>（二）表明该物品系经我司许可入校使用，任何个人、组织不得擅自占有、没收、处置；</p>
+    <p>（三）入校许可所载信息可作为权属证明及入校合规性的证据。</p>
+    <p>第四条 入校许可的有效期限与该计划的执行期限一致，即2024年至2027年6月6日。到期后如需继续入校，应重新申请。</p>
+  </div>
+
+  <div class="section">
+    <h2>第二章 入校资产范围限制</h2>
+    <p>第五条 属于为完成该计划所必需的资产（如座椅、灯具、充电设备等），我司予以入校许可。</p>
+    <p>第六条 我司充分尊重学校对于手机及智能设备管理的有关要求。基于此：</p>
+    <p>（一）在未与校方充分协商、报备的情况下，我司不会允许属于我司资产的智能联网设备（包括但不限于智能手机、平板电脑、带有联网功能的IoT设备等）入校；</p>
+    <p>（二）对于上述智能联网设备，我司不会发放相应入校许可；</p>
+    <p>（三）客户不得以任何理由将我司未取得入校许可的智能联网设备带入校园，否则我司有权立即收回该资产并一并收回已发放入校许可的全部资产。</p>
+  </div>
+
+  <div class="section">
+    <h2>第三章 入校资产的保护</h2>
+    <p>第七条 因客户系校方学生，亦为我司法定代表人，主要业务往来发生于我司与客户之间。故我司非必要情况下不会主动联系校方，亦不向校方提供任何服务。校方非本办法的当事方，但为了保证该计划顺利完成，仍希望校方及有关人员依据本办法给予支持。</p>
+    <p>第八条 校方有关人员（包括但不限于教师、宿管人员、保安人员等）对于已发放入校许可的我司资产，不得实施以下行为：</p>
+    <p>（一）没收：在未告知我司且未经我司书面同意的情况下，没收我司资产；</p>
+    <p>（二）自行处置：在未告知我司且未经我司书面同意的情况下，对我司资产进行出售、转让、销毁等处置；</p>
+    <p>（三）捆绑不合理条件：以成绩、名次、表现等作为条件，要求与我司资产进行交换、抵扣或限制客户对我司取得入校许可的资产的正常使用。</p>
+    <p>第九条 我司发现校方有关人员存在第八条所述行为的，处理流程如下：</p>
+    <p>（一）第一步——书面催告：我司向校方发出书面通知，要求校方在收到通知后15个自然日内归还相关资产并停止侵权行为；</p>
+    <p>（二）第二步——行政反映：校方拒不归还的，我司将向校方属地教育行政主管部门书面反映；</p>
+    <p>（三）第三步——公安报案或民事诉讼：经教育行政主管部门处理仍无法解决的，我司将依法向事件发生地属地基层人民法院提起民事诉讼。。</p>
+    <p>第十条 客户应妥善保管入校资产及入校许可，如损毁、遗失，应在3个自然日内通知我司。因客户原因导致资产损毁、遗失或携带未取得入校许可的我司实物资产入校被校方没收的，客户应承担相应赔偿责任。</p>
+  </div>
+
+  <div class="section">
+    <h2>第四章 资产处置相关规定</h2>
+    <p>第十一条 资产处置包括报废、出售、转让、捐赠等，须经公司法定代表人审批。</p>
+    <p>第十二条 报废资产应在资产管理平台中注销公示，并移除或销毁《昆象云科技资产标签》及入校许可。</p>
+    <p>第十三条 未经我司书面同意，任何个人、组织不得对我司资产进行任何形式的处置。违反者我司有权追究法律责任。</p>
+  </div>
+
+  <div class="section">
+    <h2>第五章 资产损失赔偿补充</h2>
+    <p>第十四条 拾获人、校方或其他任何第三方非法占有、损坏我司资产的，我司有权要求其按资产市场价值进行全额赔偿，并承担我司因维权产生的合理费用（包括但不限于律师费、交通费、公证费等）。</p>
+  </div>
+
+  <div class="section">
+    <h2>第六章 关于法定代表人未成年的效力说明</h2>
+    <p>第十五条 我司法定代表人系未满十八周岁的自然人，属于限制民事行为能力人。但法定代表人签署本规定系以公司名义从事的职务行为，而非以个人名义从事的民事法律行为。</p>
+    <p>第十六条 法定代表人代表我司签署本规定，其法律后果由我司（昆明昆象云科技有限责任公司）独立承受，不以法定代表人个人的民事行为能力为前提条件。</p>
+    <p>第十七条 依据《中华人民共和国公司法》第十三条，公司法定代表人依照公司章程及股东会决议产生，签署本规定系执行公司职务的行为。</p>
+    <p>第十八条 本规定经我司全体股东审议通过，系公司真实意思表示。任何个人、组织不得以法定代表人未满十八周岁为由，主张本规定无效或可撤销。</p>
+  </div>
+
+  <div class="section">
+    <h2>第七章 附则</h2>
+    <p>第十九条 本规定的成立、生效、履行、解释及纠纷解决等相关事宜，均适用中华人民共和国大陆地区法律（不包括冲突法）。</p>
+    <p>第二十条 本规定中所引用的网址及微信号如有变更，我司将在昆象云科技规章制度访问网站及时更新，恕不另行逐一通知。</p>
+    <p>第二十一条 因昆象云科技失物找回平台目前正在优化中，已停止访问。在恢复前，拾获人可根据相关网页展示的提示信息通过官网或微信等其他渠道联系归还。</p>
+    <p>第二十二条 本规定的解释权归昆明昆象云科技有限责任公司所有。</p>
+    <p>第二十三条 本规定自发布之日起施行。</p>
+    <p>第二十四条 本办法未尽内容，以《昆象云科技资产管理规定》不冲突的内容作为补充。</p>
+    <p style="margin-top:20px;text-align:right;color:#888">【正文完】</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2022-<span id="year"></span> 昆明昆象云科技有限责任公司 版权所有</p>
+  <p style="margin-top:6px">
+    <a href="https://kunxy.top" target="_blank">昆象云科技官网</a> ｜ 
+    <a href="https://rule-portal.yongmukeji.top" target="_blank">昆象云科技规章制度访问指引</a> ｜ 
+    <a href="https://yongmukeji.top" target="_blank">永慕智创软件工作室官网</a>
+  </p>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+function toggleHistory(){
+  document.getElementById('historyPanel').classList.toggle('active');
+  document.getElementById('overlay').classList.toggle('active');
+}
+function closeHistory(){
+  document.getElementById('historyPanel').classList.remove('active');
+  document.getElementById('overlay').classList.remove('active');
+}
+</script>
+</body>
+</html>
