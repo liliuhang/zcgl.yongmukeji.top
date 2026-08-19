@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昆象云科技资产管理规定</title>
+<link rel="icon" href="https://hive.forms.usercontent.microsoft/Images/9188040d-6c67-4c5b-b112-36a304b66dad/00000000-0000-0003-bffd409131bf/T0RRH45M4BJGVXSCOEE2GS5JAZ/fe1565ec-02bf-4b26-800f-b6b659adee28" type="image/png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#121212;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.8;padding-bottom:80px}
+.btn{position:fixed;top:12px;left:12px;z-index:1000;background:#333;color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.btn:hover{background:#444}
+.history-panel{display:none;position:fixed;top:60px;left:50%;transform:translateX(-50%);width:90%;max-width:500px;max-height:70vh;overflow-y:auto;background:#1e1e1e;border:1px solid #333;border-radius:12px;padding:20px;z-index:999;box-shadow:0 4px 20px rgba(0,0,0,.6)}
+.history-panel.active{display:block}
+.history-panel h3{color:#fff;margin-bottom:12px;font-size:18px}
+.history-item{padding:10px 0;border-bottom:1px solid #333;color:#ccc;font-size:14px}
+.history-item:last-child{border-bottom:none}
+.history-item .time{color:#888;font-size:12px;margin-bottom:4px}
+.history-item .content{color:#bbb}
+.close-btn{float:right;background:none;border:none;color:#fff;font-size:20px;cursor:pointer}
+.container{max-width:720px;margin:0 auto;padding:20px 16px}
+h1{font-size:24px;text-align:center;margin:60px 0 10px;color:#fff}
+.subtitle{text-align:center;color:#888;font-size:14px;margin-bottom:30px}
+.meta{text-align:center;color:#666;font-size:13px;margin-bottom:30px}
+.section{margin-bottom:30px}
+.section h2{font-size:20px;color:#fff;margin-bottom:14px;border-left:4px solid #4a9eff;padding-left:10px}
+.section h3{font-size:17px;color:#ddd;margin:16px 0 8px}
+.section p,.section li{font-size:14px;color:#bbb;margin-bottom:8px}
+.section ul{padding-left:20px}
+.section li{margin-bottom:6px}
+.warning{background:#2a1a1a;border:1px solid #5a2a2a;border-radius:8px;padding:12px;margin:16px 0;color:#ff9999;font-size:13px}
+.notice{background:#1a3a1a;border:1px solid #2a5a2a;border-radius:8px;padding:12px;margin:16px 0;color:#99ff99;font-size:13px}
+.footer{position:fixed;bottom:0;left:0;right:0;background:#1a3a6a;color:#fff;padding:14px 16px;text-align:center;font-size:13px;z-index:100}
+.footer a{color:#aaddff;text-decoration:none}
+.overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:998}
+.overlay.active{display:block}
+</style>
+</head>
+<body>
+<button class="btn" onclick="toggleHistory()">📋 历史记录</button>
+<div class="overlay" id="overlay" onclick="closeHistory()"></div>
+<div class="history-panel" id="historyPanel">
+  <button class="close-btn" onclick="closeHistory()">✕</button>
+  <h3>📋 更新历史记录</h3>
+  <div class="history-item">
+    <div class="time">2026年5月31日（第一版）</div>
+    <div class="content">规定首次发布。</div>
+  </div>
+</div>
+<div class="container">
+  <h1>昆象云科技资产管理规定</h1>
+  <p class="meta">第一版发布日期：2026年5月31日 ｜ 更新日期：2026年5月31日，目前为第一版</p>
+  <div class="notice">
+    为方便统一管理，西山区永慕智创软件工作室（个体工商户）&lt;原永慕科技&gt;的员工同样适用本政策。
+  </div>
+
+  <div class="section">
+    <h2>第一章 总则</h2>
+    <p>第一条 为加强企业资产管理，提高资产使用效率，确保资产安全完整，根据《中华人民共和国民法典》《中华人民共和国公司法》《中华人民共和国治安管理处罚法》《中华人民共和国刑法》及相关国家法律法规及企业内部管理要求，特制定《昆象云科技资产管理规定》及其实施细则（以下统称"本规定"）。</p>
+    <p>第二条 本规定旨在规范资产的购置、使用、维护、处置等全生命周期管理流程，促进企业资源合理配置与可持续发展。</p>
+    <p>第三条 昆明昆象云科技有限责任公司（以下在本规定中更多地简称为"我司"）系依据中华人民共和国法律合法设立并有效存续的有限责任公司。我司在法律允许的范围内保留对本管理规定的完整解释权、修改权等。</p>
+    <p>第四条 本规定自发布之日起生效。我司有权根据经营管理需要对本规定进行修订，修订后的规定经我司内部审批程序通过后即行生效，并通过有效途径通知。</p>
+  </div>
+
+  <div class="section">
+    <h2>第二章 适用范围</h2>
+    <p>第五条 本规定适用于公司所有部门及分支机构以及接触到我司资产的任何个人、组织，涵盖的资产范围如下：</p>
+    <p>（一）固定资产：包括但不限于硬件设备（电脑、服务器、投影仪、座椅、灯具、充电设备等）、房产、办公家具、交通工具等；</p>
+    <p>（二）流动资产：包括但不限于银行存款、应收账款、预付款项、库存物资等；</p>
+    <p>（三）无形资产：包括但不限于专利、商标、软件著作权、商业秘密、域名、数据资产等。</p>
+    <p>第六条 凡与我司存在业务往来、劳动关系、服务关系或其他任何关系的个人、组织，均应遵守本规定中与其相关的条款。</p>
+  </div>
+
+  <div class="section">
+    <h2>第三章 资产登记与标签管理</h2>
+    <p>第七条 我司所有实物资产均应在昆象云科技资产管理平台（网址：https://zichanchaxun.yongmukeji.top ）进行登记公示，并附有资产唯一标识。</p>
+    <p>第八条 我司实物资产均附有《昆象云科技资产标签》（包括电子版、纸质版等形式），该标签系我司资产所有权的法定标识。任何个人、组织不得擅自涂改、损毁、移除该标签。</p>
+    <p>第九条 《昆象云科技资产标签》具有以下法律效力：</p>
+    <p>（一）表明该物品为我司合法所有或合法管理的资产；</p>
+    <p>（二）拾获者据此应知晓该物品的权属，并负有归还义务；</p>
+    <p>（三）标签所载信息可作为权属证明的初步证据。</p>
+  </div>
+
+  <div class="section">
+    <h2>第四章 实物资产被拾取的处理办法</h2>
+    <p>第十条 我司员工或其他任何个人、组织（以下统称"拾获人"）拾获我司在昆象云科技资产管理平台公示的或带有《昆象云科技资产标签》（包括电子版、纸质版等）的实物资产的，应按以下规定处理：</p>
+    <p>（一）拾获人应在拾获之日起7个自然日内，通过以下任一方式主动联系归还：</p>
+    <p>访问昆象云科技失物找回平台（网址：https://lost-and-found.yongmukeji.top）进行在线申报归还；</p>
+    <p>访问我司官方网站 https://yongmukeji.top 查看更多联系方式进行归还；</p>
+    <p>添加我司官方微信：ymkj_weixin 联系归还。</p>
+    <p>（二）拾获人归还资产时应保持资产原状，并配合我司进行资产核验。</p>
+    <p>第十一条 拾获人无正当理由、或直接无理由、或未经我司知晓并同意，对拾获的我司实物资产实施以下行为之一的，我司有权采取法律措施：</p>
+    <p>（一）占有：拒不归还或以各种理由拖延归还的；</p>
+    <p>（二）损坏：故意或重大过失导致资产损毁、灭失的；</p>
+    <p>（三）处置：未经我司同意擅自出售、转让、赠与、抵押、出质或以其他方式处分的；</p>
+    <p>（四）为违法行为提供支持：利用该资产从事或为违反国家法律法规的行为提供工具、条件等支持的。</p>
+    <p>第十二条 针对第十一条所述情形，我司的处理流程如下：</p>
+    <p>（一）第一步——协商催告：我司（可委托昆象云科技法务部）主动联系相关拾获人，要求其在收到通知后15个自然日内归还资产并赔偿损失；</p>
+    <p>（二）第二步——公安报案：拾获人仍不归还的，我司将向事件发生地属地公安机关报案；</p>
+    <p>（三）第三步——民事诉讼：经公安机关处理仍无法解决的，我司将向事件发生地属地基层人民法院提起民事诉讼；</p>
+    <p>（四）第四步——刑事追诉：拾获人的行为构成犯罪的，我司将依法移交有关机关由其提起刑事诉讼。</p>
+    <p>第十三条 拾获人因拾获我司资产所产生的合理费用，在归还资产并经我司核实后，我司可酌情予以补偿。但拾获人不得以此为由拒绝归还或主张留置。</p>
+  </div>
+
+  <div class="section">
+    <h2>第五章 资产购置与验收</h2>
+    <p>第二十四条 资产购置应遵循以下原则：</p>
+    <p>（一）需求导向：根据实际业务需要提出购置申请；</p>
+    <p>（二）预算控制：在年度预算范围内进行；</p>
+    <p>（三）审批流程：单件资产价值超过人民币300元的，须经公司法定代表人审批；超过人民币500元的，须经股东会决议。</p>
+    <p>第二十五条 资产到货后应在5个工作日内完成验收，验收合格后登记入库并可在资产管理平台查询到。</p>
+  </div>
+
+  <div class="section">
+    <h2>第六章 资产使用与维护</h2>
+    <p>第二十六条 资产使用人应按照资产使用说明合理使用，不得擅自将公司资产用于个人用途或与公司业务无关的用途。</p>
+    <p>第二十七条 资产使用人应定期对所使用资产进行维护保养，发现故障应在2个工作日内报修。因使用人故意或重大过失导致资产损坏的，使用人应承担维修或赔偿责任。</p>
+    <p>第二十八条 资产使用人离职、调岗或不再需要使用某项资产时，应在3个工作日内办理资产交接手续，将资产及相关标签/许可完好归还。</p>
+  </div>
+
+  <div class="section">
+    <h2>第七章 资产处置</h2>
+    <p>第二十九条 资产处置包括报废、出售、转让、捐赠等，须经公司法定代表人审批。</p>
+    <p>第三十条 报废资产应在资产管理平台中注销公示，并移除或销毁《昆象云科技资产标签》及入校许可。</p>
+    <p>第三十一条 未经我司书面同意，任何个人、组织不得对我司资产进行任何形式的处置。违反者我司有权依据本规定追究法律责任。</p>
+  </div>
+
+  <div class="section">
+    <h2>第八章 资产盘点</h2>
+    <p>第三十二条 我司应每年度进行一次资产全面盘点，盘点结果应形成书面记录并存档。</p>
+    <p>第三十三条 对于贴有入校许可的资产，客户应配合我司进行远程或现场核查，核查频率不低于每学期一次。</p>
+  </div>
+
+  <div class="section">
+    <h2>第九章 资产损失与赔偿</h2>
+    <p>第三十四条 因不可抗力（如战争、自然灾害等）导致资产损失的，我司不追究相关人员责任，但应及时报告并在资产管理平台中更新状态。</p>
+    <p>第三十五条 因个人故意或重大过失导致资产损失的，责任人应按资产净值进行赔偿。</p>
+    <p>第三十六条 拾获人或其他任何第三方非法占有、损坏我司资产的，我司有权要求其按资产市场价值进行全额赔偿，并承担我司因维权产生的合理费用。</p>
+  </div>
+
+  <div class="section">
+    <h2>第十章 附则</h2>
+    <p>第四十一条 本规定与国家法律法规相抵触的，在不损害我司合法权益的情况下以国家法律法规为准。</p>
+    <p>第四十二条 本规定中所引用的网址及微信号如有变更，我司将在官方网站https://yongmukeji.top 及时更新，敬请留意，恕不另行逐一通知。</p>
+    <p>第四十三条 因昆象云科技失物找回平台目前正在优化中，已停止访问。在恢复前，拾获人可根据相关网页展示的提示信息通过官网或微信等其他渠道联系归还。</p>
+    <p>第四十四条 本规定的解释权归昆明昆象云科技有限责任公司所有。</p>
+    <p>第四十五条 本规定自发布之日起施行。</p>
+    <p style="margin-top:20px;text-align:right;color:#888">【正文完】</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2025-<span id="year"></span> 昆明昆象云科技有限责任公司 版权所有</p>
+  <p style="margin-top:6px">
+    <a href="https://kunxy.top" target="_blank">昆象云科技官网</a> ｜ 
+    <a href="https://rule-portal.yongmukeji.top" target="_blank">昆象云科技规章制度访问指引</a> ｜ 
+    <a href="https://yongmukeji.top" target="_blank">永慕智创软件工作室官网</a>
+  </p>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+function toggleHistory(){
+  document.getElementById('historyPanel').classList.toggle('active');
+  document.getElementById('overlay').classList.toggle('active');
+}
+function closeHistory(){
+  document.getElementById('historyPanel').classList.remove('active');
+  document.getElementById('overlay').classList.remove('active');
+}
+</script>
+</body>
+</html>
